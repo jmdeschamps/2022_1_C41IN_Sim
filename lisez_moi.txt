@@ -1,0 +1,3 @@
+Simul 2022, pour le cours C41-IN
+
+projet de simulation Loup-Lapin-carotte

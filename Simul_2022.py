@@ -46,7 +46,7 @@ class Vue():
         #  find_overlapping d'un rectangle
         #  retourne le id de tous les items dans un tuple
         # ici j'ai donc créer un rectangle autour de la position de souris
-        listeitems=self.canevas.find_overlapping(evt.x,evt.y,evt.x+1,evt.y+1)
+        listeitems=self.canevas.find_overlapping(evt.x-20,evt.y-20,evt.x+20,evt.y+20)
         if len(listeitems)==1: # sera vrai s'il n'y a que la tour_temp, donc un seul item
             self.canevas.create_image(x, y, image=self.imgs["tour"], tags=("tour", ))
             self.canevas.unbind("<Motion>")
